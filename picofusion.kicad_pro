@@ -121,7 +121,7 @@
         "min_hole_to_hole": 0.25,
         "min_microvia_diameter": 0.19999999999999998,
         "min_microvia_drill": 0.09999999999999999,
-        "min_resolved_spokes": 2,
+        "min_resolved_spokes": 1,
         "min_silk_clearance": 0.0,
         "min_text_height": 0.7999999999999999,
         "min_text_thickness": 0.08,
@@ -202,7 +202,9 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [],
+    "erc_exclusions": [
+      "power_pin_not_driven|495300|419100|80b5e5c4-d423-49ab-bcce-b58e96570a4c|00000000-0000-0000-0000-000000000000|||"
+    ],
     "meta": {
       "version": 0
     },
@@ -667,27 +669,11 @@
       },
       {
         "netclass": "Signal",
-        "pattern": "Net-(U8-DIR)"
+        "pattern": "Net-(D4-Pad3)"
       },
       {
         "netclass": "Signal",
-        "pattern": "Net-(D4-DIN)"
-      },
-      {
-        "netclass": "SPI",
-        "pattern": "/SPI1_nCS"
-      },
-      {
-        "netclass": "SPI",
-        "pattern": "/SPI1_PICO"
-      },
-      {
-        "netclass": "SPI",
-        "pattern": "/SPI1_POCI"
-      },
-      {
-        "netclass": "SPI",
-        "pattern": "/SPI1_SCK"
+        "pattern": "Net-(R14-Pad2)"
       }
     ]
   },
